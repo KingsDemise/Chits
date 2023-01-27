@@ -62,13 +62,7 @@ const onSubmit = (event) => {
               }
               
           })
-
   }
-  onAuthStateChanged(auth,(user) => {
-    if(user) {
-      window.location="/admin"; //After successful login, user will be redirected to home.html
-    }
-  });
 }
 
   return <Grid verticalAlign="middle" textAlign="center" className="grid-form" >
