@@ -1,4 +1,5 @@
 import React from 'react'
+import {ImCross} from "react-icons/im"
 const style={
     li: `flex justify-between bg-[#ffe9ff] p-4 my-2 rounded-md`,
     row: `flex`,
@@ -6,7 +7,7 @@ const style={
     button: `flex items-center`,
 }
 
-function Todo({todo}) {
+function TodoA({todo,deleteT}) {
   return (
     <li className={style.li}>
         <div className={style.row}>
@@ -14,9 +15,10 @@ function Todo({todo}) {
                 {todo.text}
             </p>
         </div>
+        <button onClick={() => deleteT(todo.id)}><ImCross/></button>
       
     </li>
   )
 }
 
-export default Todo
+export default TodoA
