@@ -65,7 +65,7 @@ function Admin() {
         <h3 className={style.heading}>Chits</h3>
         <p className={style.noti}> Admin Rights Granted</p>
         <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
-        <Button inverted color="black" >Sign Out</Button>
+        <Button inverted color="black" onClick={logOut} >Sign Out</Button>
         </div>
         <form onSubmit={createTodo} className={style.form}>
           <input
